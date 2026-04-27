@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #f2f7ff;
+  color: #102a43;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: min(520px, 90vw);
+  padding: 2rem;
+}
+h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(16, 42, 67, 0.12);
+  padding: 2rem;
+}
+button {
+  width: 100%;
+  max-width: 260px;
+  margin: 0.5rem auto;
+  display: block;
+  padding: 0.95rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#drawButton {
+  background: #2f80ed;
+  color: white;
+}
+#resetButton {
+  background: #f2f2f2;
+  color: #102a43;
+}
+.result {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  background: #eef5ff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.history {
+  margin-top: 1rem;
+  color: #334e68;
+  line-height: 1.6;
+  min-height: 2rem;
+}
