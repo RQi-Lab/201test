@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>抽籤頁面</title>
+  <title>射飛鏢抽籤</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main>
-    <h1>抽籤系統</h1>
-    <p>座號範圍：1 號到 23 號</p>
-    <div class="card">
-      <button id="drawButton">開始抽籤</button>
+    <h1>射飛鏢抽籤</h1>
+    <p>座號範圍：1 號到 23 號，按下「投飛鏢」來決定命中哪一號。</p>
+    <div class="board-card">
+      <div class="dartboard" aria-label="飛鏢靶">
+        <div class="rings">
+          <div class="ring ring-outer"></div>
+          <div class="ring ring-middle"></div>
+          <div class="ring ring-inner"></div>
+          <div class="bullseye"></div>
+        </div>
+        <div class="numbers" id="numbers"></div>
+        <div class="dart" id="dart"></div>
+      </div>
+      <button id="drawButton">投飛鏢</button>
       <button id="resetButton">重置</button>
-      <div id="result" class="result">請按「開始抽籤」</div>
+      <div id="result" class="result">準備好了，按「投飛鏢」。</div>
       <div id="history" class="history"></div>
     </div>
   </main>
